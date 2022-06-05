@@ -1,0 +1,31 @@
+﻿<Page x:Class="СarService.View.ResultView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:СarService.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ResultView" Background="White">
+
+    <DockPanel LastChildFill="True" Margin="10">
+        <Grid DockPanel.Dock="Top" Margin="0, 10, 0, 10">
+            <Button Content="Назад" Width="70" Height="35" HorizontalAlignment="Left" Margin="10, 0, 0, 0" Click="OnBackButtonClick"/>
+            <TextBlock Text="Список автозапчастей" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        </Grid>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Autoparts}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Запчасть" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Автомобиль" Binding="{Binding Auto}"/>
+                <DataGridTextColumn Header="Стоимость" Binding="{Binding Cost}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Заказать"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Page>
