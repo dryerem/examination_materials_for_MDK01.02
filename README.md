@@ -35,14 +35,12 @@ dd,MM,yyyy в зависимости от локали винды
 - В файле Emloyee.cs пропущена буква в слова Age (Ag)
 - В файле Helper.cs не подключена ссылка (using System.Windows.Controls;)
 - В файле MainView.xaml.cs в методе OnShowEmloyesButtonClick заменить new MainView() на ResultView
-- В файле ResultView.xaml.cs исправить название пространства имен (Fitnessss > Fitness)
 
 [Gardener - VAR 11]
 
 - Подключить библиотеки ExcelDataReader.dll и ExcelDataReader.DataSet.dll (лежат в папке bin/Debug)
 - В файле ResultView.xaml.cs раскомментировать строку 23 
-- В файле ResultView.xaml.cs в строке 30 заменить Assembly.GetExecutingAssembly().Location на Environment.CurrentDirectory
-(в первом случае путь включает имя exe файла, во втором текущая директория, где исполняется программа)
+- В файле ResultView.xaml.cs в строке 30 Assembly.GetExecutingAssembly().Location возвращает путь к исполняемому файлу. Решается несколькими способами, один из которых относительный путь. Можно просто оставить имя файла. 
 
 [Pawnshop - VAR 10]
 
