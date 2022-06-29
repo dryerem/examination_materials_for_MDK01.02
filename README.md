@@ -61,5 +61,4 @@ dd,MM,yyyy в зависимости от локали винды
 
 - Подключить библиотеки ExcelDataReader.dll и ExcelDataReader.DataSet.dll (лежат в папке bin/Debug)
 - В файле Helper.cs добавить модификатор static после public
-- В файле App.xaml исправить StartupUri на MainWindow.xaml (убрать лишнюю w в конце)
 - В файле ResultView.xaml в строках 50-53 добавить .ToString()
