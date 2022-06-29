@@ -4,10 +4,12 @@
 # Подсказки
 1) Helper.cs должен выглядеть так:
 
+```cpp
 public static class Helper
 {
     public static Frame Navigation { get; set; }
 }
+```
 
 класс и поле должны быть с модификатором static! 
 
