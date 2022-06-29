@@ -35,7 +35,6 @@ dd,MM,yyyy в зависимости от локали винды
 - В файле Emloyee.cs пропущена буква в слова Age (Ag)
 - В файле Helper.cs не подключена ссылка (using System.Windows.Controls;)
 - В файле MainView.xaml.cs в методе OnShowEmloyesButtonClick заменить new MainView() на ResultView
-- В файле ResultView.xaml.cs исправить название пространства имен (Fitnessss > Fitness)
 
 [Gardener - VAR 11]
 
