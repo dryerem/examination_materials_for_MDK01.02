@@ -54,7 +54,6 @@ dd,MM,yyyy в зависимости от локали винды
 
 [Stomatology - VAR 13]
 
-- В файле ResultView.xaml в 1 строке указать корректное имя класса (должно соотестовать названию класса в ResultView.xaml.cs)
 Подключить библиотеки ExcelDataReader.dll и ExcelDataReader.DataSet.dll (лежат в папке bin/Debug)
 - В файле Helper.cs добавить модификатор static после public
 - В файле ResultView.xaml исправить цикл, исправить row = 1 на row = 0
