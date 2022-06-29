@@ -7,7 +7,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Fitnessss.View
+namespace Fitness.View
 {
 	/// <summary>
 	/// Логика взаимодействия для ResultView.xaml
