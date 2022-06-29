@@ -27,8 +27,7 @@ public static class Helper
 
 - В файле ResultView.xaml.cs раскомментировать 23 строчку (DataContext = this) - отвечает за привязку данных к форме
 - В файле ResultView.xaml.cs в цикле заменить <= на < (выход за пределы диапазона)
-- В файле ResultView.xaml.cs в строке 53 неверный формат даты (ddMMyyyy) из-за чего будет краш, исправить на dd.MM.yyyy или
-dd,MM,yyyy в зависимости от локали винды
+- В файле ResultView.xaml.cs в строке 53 неверный формат даты (ddMMyyyy) из-за чего будет краш, исправить на dd.MM.yyyy (потому что в файле экселя дата через точку)
 
 [Fitness - VAR 14]
  
